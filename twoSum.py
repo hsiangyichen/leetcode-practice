@@ -14,8 +14,8 @@
 
     # Method 2: O(nlogn)
     # build a dict for the list first
-    # sort the list
-    # use two pointer from the left and the right to loop through the list
+    # sort the list O(nlogn)
+    # use two pointer from the left and the right to loop through the list O(n)
     # add two nums together and check if it is larger than target
         # if yes, move the right pointer
         # if no, move the left pointer
