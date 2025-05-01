@@ -7,16 +7,20 @@
     # input: list; output: num
 
     # Method 1: O(n^2)
-    # n = len(nums)
-    # for i in range(n):
+    # loop through the list and see if that number also in the rest of the list
+        # check if the count of that number is larger than n/2
+        # if yes, return that number
+    # for i in range(len(nums)):
     #     count = 0
-    #     for j in range(n):
+    #     for j in range(len(nums)):
     #         if nums[j] == nums[i]:
     #             count += 1
     #     if count > n // 2:
     #         return nums[i]
 
     # Method 2: O(nlogn)
+    # sort the list first
+    # return the middle element
     # nums.sort()
     # majority = nums[len(nums) / 2]
     # return majority
