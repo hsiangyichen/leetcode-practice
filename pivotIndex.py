@@ -12,12 +12,21 @@
         # add up the leftsum and rightsum and check which one leftsum == rightsum
         # if yes, return that index
         # if no, return -1
+    # for i in range(len(nums)):
+    #     leftsum, rightsum = 0, 0
+    #     for j in range(0, i):
+    #         leftsum += nums[j]
+    #     for j in range(i+1, len(nums)):
+    #         rightsum += nums[j]
+    #     if leftsum == rightsum:
+    #         return i
+    # return -1
 
     # Method 2: O(n)
-    # leftSum, rightSum = 0, sum(nums)
-    # for i, v in enumerate(nums):
-    #     rightSum -= v
-    #     if leftSum == rightSum:
+    # leftsum, rightsum = 0, sum(nums)
+    # for i in range(len(nums)):
+    #     rightsum -= nums[i]
+    #     if leftsum == rightsum:
     #         return i
-    #     leftSum += v
+    #     leftsum += nums[i]
     # return -1
