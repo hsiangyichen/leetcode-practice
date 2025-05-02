@@ -17,9 +17,9 @@
     # for num2 in nums2:
     #     if num2 not in nums1:
     #         distinct_nums2.append(num2)
-    # return list(set(distinct_nums1)), list(set(distinct_nums2))
+    # return [list(set(distinct_nums1)), list(set(distinct_nums2))]
 
     # Method 2: O(n)
     # set1, set2 = set(nums1), set(nums2)
-    # return list(set1-set2), list(set2-set1)
+    # return [list(set1-set2), list(set2-set1)]
     
