@@ -11,16 +11,13 @@
     # Method 1: O(n^2)
     # distinct_nums1 = []
     # distinct_nums2 = []
-    # result = []
     # for num1 in nums1:
     #     if num1 not in nums2:
     #         distinct_nums1.append(num1)
     # for num2 in nums2:
     #     if num2 not in nums1:
     #         distinct_nums2.append(num2)
-    # result.append(list(set(distinct_nums1)))
-    # result.append(list(set(distinct_nums2)))
-    # return result
+    # return list(set(distinct_nums1)), list(set(distinct_nums2))
 
     # Method 2: O(n)
     # set1, set2 = set(nums1), set(nums2)
