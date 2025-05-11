@@ -23,15 +23,13 @@
     # if no, add n to the seen list
     # loop through the digits of n and sum the square of each digit
     # if the sum is 1, return true
-
     # seen = []
     # while n != 1 and n not in seen:
     #     seen.append(n)
-    #     sum = 0
+    #     new_n = 0
     #     for digit in str(n):
-    #         sum += int(digit) ** 2
-    #     print(sum)   
-    #     n = sum
+    #         new_n += int(digit)**2
+    #     n = new_n
     # return n == 1
 
     # Method 2: O(n)
@@ -40,7 +38,6 @@
     # if no, add n to the seen set
     # loop through the digits of n and sum the square of each digit
     # if the sum is 1, return true
-
     # seen = set()
     # while n != 1:
     #     if n in seen:
