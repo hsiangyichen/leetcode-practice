@@ -19,11 +19,11 @@
     # for i in range(len(s)):
     #     s_dict[s[i]] += 1
     # for v in s_dict.values():
-    #     result += (v // 2) * 2
-    # for v in s_dict.values():
     #     if v % 2 == 1:
     #         result += 1
     #         break
+    # for v in s_dict.values():
+    #     result += (v // 2) * 2
     # return result
         
         

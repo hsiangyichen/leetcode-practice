@@ -9,16 +9,17 @@
     # check all the possible arrangement of s
     # "aba", "ba","aa", "ab"
     # if any arrangement == the reverse of it, return true
+    # if s == s[::-1]:
+    #     return True
     # for i in range(len(s)):
-    #     modified = s[:i] + s[i+1:] # O(n)
-    #     if modified == modified[::-1]:
+    #     arrangement = s[:i] + s[i+1:]
+    #     if arrangement == arrangement[::-1]:
     #         return True
-
     # return False
 
     # Method 2: O(n)
     # use two pointers (left and right) to compare characters
-    # if there is a mismatch, remove one character and check if the rest is a palindrome
+    # if there is a mismatch, remove either the left or right character
     # def is_palindrome(sub):
     #     return sub == sub[::-1]
     
