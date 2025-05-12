@@ -8,7 +8,7 @@
 
     # Method 1: O(n)
     # loop through the list and add the num to string
-    # if curr num is not continuous, append the string to the result
+    # if curr num is not continuous, append the string of start and the prev num to the result
     # if not nums:
     #     return []
     # result = []
