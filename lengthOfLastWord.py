@@ -25,5 +25,6 @@
     #         return len(word)
 
     # Method 3: O(n)
-    # s = s.strip().split()
-    # return len(s[-1])
+    # s = s.split()
+    # last = s[-1]
+    # return len(last)
