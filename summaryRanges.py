@@ -8,22 +8,18 @@
 
     # Method 1: O(n)
     # loop through the list and add the num to string
-    # if next num is not continuous, append the string to the result
+    # if curr num is not continuous, append the string to the result
     # if not nums:
     #     return []
-
-    # ranges, range_num = [], []
+    # result = []
     # nums.append(nums[-1])
 
-    # for i in range(len(nums)):
-    #     range_num.append(nums[i])
-    #     if i + 1 < len(nums) and nums[i] + 1 != nums[i+1]:
-    #         if range_num[0] != range_num[-1]:
-    #             ranges.append(str(range_num[0]) + "->" + str(range_num[-1]))
+    # start = nums[0] # 0
+    # for i in range(1, len(nums)):
+    #     if nums[i] != nums[i-1] + 1:
+    #         if start == nums[i-1]:
+    #             result.append(str(start))
     #         else:
-    #             ranges.append(str(range_num[0]))
-    #         range_num = []
-
-    # return ranges
-        
-    
+    #             result.append(str(start) + "->" + str(nums[i - 1]))
+    #         start = nums[i]
+    # return result
