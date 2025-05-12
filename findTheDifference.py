@@ -13,15 +13,6 @@
     #         s.remove(c)
 
     # Method 2: O(n+m)
-    # t = Counter(t)
-    # for c in s:
-    #     if c in t:
-    #         t[c] -= 1
-    # for c in t.keys():
-    #     if t[c] == 1:
-    #         return c
-
-    # Method 3: O(n+m)
     # s = Counter(s)
     # for c in t:
     #     if c in s and s[c] != 0:
@@ -29,7 +20,7 @@
     #     else:
     #         return c
 
-    # Method 4: O(n)
+    # Method 3: O(n)
     # s_sum = sum(ord(x) for x in s)
     # t_sum = sum(ord(y) for y in t)
 
