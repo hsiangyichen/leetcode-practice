@@ -11,7 +11,7 @@
     # remove the value that is in banned
     # check if count > max_count
     # if yes, replace new word
-    # words = re.findall(r'\w+', paragraph.lower())
+    # words = re.sub(r'[^a-zA-Z0-9]', ' ', paragraph).lower().split()
     
     # filtered_words = []
     # for word in words:
@@ -37,7 +37,7 @@
     # make it a dict
     # remove the one that is in banned
     # return the key that has the max value
-    # words = re.findall(r'\w+', paragraph.lower())
+    # words = re.sub(r'[^a-zA-Z0-9]', ' ', paragraph).lower().split()
     
     # filtered_words = []
     # for word in words:
