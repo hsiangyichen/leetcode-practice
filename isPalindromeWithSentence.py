@@ -14,10 +14,22 @@
     #     reversed_s = c + reversed_s
     # return s == reversed_s
 
-    # Method 2: O(n)
+    # Method 2: O(n), O(n)
     # remove all the space and special char and turn them into lower case
     # make a reverse copy of s
     # s = ''.join(c for c in s if c.isalnum()).lower()
     # return s == s[::-1]
+
+    # Method 3: O(n), O(1)
+    # s = ''.join(c for c in s if c.isalnum()).lower()
+    # left, right = 0, len(s) - 1
+
+    # while left < right:
+    #     if s[left] != s[right]:
+    #         return False
+    #     left += 1
+    #     right -= 1
+
+    # return True
     
     
