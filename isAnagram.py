@@ -12,7 +12,7 @@
         # if yes, return false
     # return true
 
-    # Method 2:
+    # Method 2: O(n)
     # loop through both strings
         # if it is from t, +1
         # if it is from s, -1
@@ -20,6 +20,6 @@
         # if not, return false
     # return true
 
-    # Method 3:
+    # Method 3: O(n)
     # use Counter
     # return Counter(s) == Counter(t) 
